@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import html2camvas from "html2canvas";
 
 const App = () => {
+  const [text, setText] = useState<string>("Hello html2Canpas");
   const [imageData, setImageData] = useState<string>();
 
   const capture = () => {
@@ -19,7 +20,12 @@ const App = () => {
   return (
     <>
       <div id="target">
-        <h1>HELLO REACT + TYPESCRIPT WORLD</h1>
+        <input
+          type="text"
+          onChange={(e) => setText(e.target.value)}
+          value={text}
+          style={{ fontSize: "50px" }}
+        />
       </div>
       <div>
         <input type="button" onClick={capture} value="capture" />

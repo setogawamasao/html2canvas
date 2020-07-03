@@ -1,3 +1,4 @@
-## XXXXXXXXXXXXXXXXXX
+## install
 
-![DEMO](./gif/demo.gif)
+html2canvas
+@types/html2canvas
